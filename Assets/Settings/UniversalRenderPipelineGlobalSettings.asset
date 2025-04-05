@@ -53,7 +53,11 @@ MonoBehaviour:
       - rid: 6852985685364965393
       - rid: 6852985685364965394
       - rid: 8712630790384254976
+<<<<<<< HEAD
       - rid: 6286212095767216128
+=======
+      - rid: 2862123451889221632
+>>>>>>> 9e7326f9224b34c09080443ff484e18f7faee8ae
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 8
@@ -86,7 +90,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+<<<<<<< HEAD
     - rid: 6286212095767216128
+=======
+    - rid: 2862123451889221632
+>>>>>>> 9e7326f9224b34c09080443ff484e18f7faee8ae
       type: {class: UniversalRenderPipelineRuntimeXRResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_xrOcclusionMeshPS: {fileID: 4800000, guid: 4431b1f1f743fbf4eb310a967890cbea, type: 3}
