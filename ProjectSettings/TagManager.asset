@@ -5,8 +5,13 @@ TagManager:
   serializedVersion: 3
   tags:
   - Recolector
-  - Moneda
   - Obstaculo
+  - FxTemporaire
+  - Moneda
+  - Pulpo
+  - Rayo
+  - Posion
+  - Ancla
   layers:
   - Default
   - TransparentFX
