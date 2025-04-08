@@ -43,7 +43,7 @@ public class Obstaculo_mov: MonoBehaviour
             SetRenderersVisible(true); 
         }
 
-        Debug.Log(gameObject.name + " - Speed: " + speed + " - Pos Z: " + transform.position.z);
+       //Debug.Log(gameObject.name + " - Speed: " + speed + " - Pos Z: " + transform.position.z);
     }
 
 

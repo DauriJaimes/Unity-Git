@@ -14780,6 +14780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5080f884d643d1418cab5f6ad5cb47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  efectoVFX: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
 --- !u!114 &996681724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14793,6 +14794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  efectoVFX: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
 --- !u!114 &996681725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23376,6 +23378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5080f884d643d1418cab5f6ad5cb47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  efectoVFX: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
 --- !u!114 &1466165816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23389,6 +23392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  efectoVFX: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd, type: 3}
 --- !u!54 &1466165817
 Rigidbody:
   m_ObjectHideFlags: 0
