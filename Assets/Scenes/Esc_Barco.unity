@@ -2365,7 +2365,7 @@ GameObject:
   - component: {fileID: 115509419}
   - component: {fileID: 115509420}
   m_Layer: 0
-  m_Name: Text (Legacy)
+  m_Name: p2  p
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3896,7 +3896,7 @@ GameObject:
   - component: {fileID: 208489492}
   - component: {fileID: 208489491}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: opciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5444,7 +5444,7 @@ GameObject:
   - component: {fileID: 277013349}
   - component: {fileID: 277013348}
   m_Layer: 0
-  m_Name: Text (Legacy) (1)
+  m_Name: p2 v
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6144,7 +6144,7 @@ GameObject:
   - component: {fileID: 342853719}
   - component: {fileID: 342853718}
   m_Layer: 0
-  m_Name: Button
+  m_Name: salir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9023,7 +9023,7 @@ GameObject:
   - component: {fileID: 560151739}
   - component: {fileID: 560151738}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11815,7 +11815,7 @@ GameObject:
   - component: {fileID: 766394033}
   - component: {fileID: 766394032}
   m_Layer: 0
-  m_Name: Panel (1)
+  m_Name: player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28228,7 +28228,7 @@ GameObject:
   - component: {fileID: 1691032843}
   - component: {fileID: 1691032842}
   m_Layer: 0
-  m_Name: Text (Legacy)
+  m_Name: p1 p
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30120,7 +30120,7 @@ GameObject:
   - component: {fileID: 1827440102}
   - component: {fileID: 1827440101}
   m_Layer: 0
-  m_Name: Text (Legacy) (1)
+  m_Name: p1 v
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33496,8 +33496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntajePlayer1Text: {fileID: 1691032842}
-  puntajePlayer2Text: {fileID: 1827440101}
-  vidaPlayer1Text: {fileID: 115509420}
+  puntajePlayer2Text: {fileID: 115509420}
+  vidaPlayer1Text: {fileID: 1827440101}
   vidaPlayer2Text: {fileID: 277013348}
 --- !u!114 &2070222903
 MonoBehaviour:
