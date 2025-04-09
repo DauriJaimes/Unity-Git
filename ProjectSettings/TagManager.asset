@@ -12,6 +12,8 @@ TagManager:
   - Rayo
   - Posion
   - Ancla
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX

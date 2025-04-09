@@ -12,6 +12,7 @@ public class Recolectables : MonoBehaviour
     public AudioClip sonidoObstaculos;
     private AudioSource audioSource;
     public GameObject efectoVFX;
+    public GameObject Personaje;
 
 
     private int score = 0; // puntuación por recoger monedas
@@ -33,6 +34,18 @@ public class Recolectables : MonoBehaviour
                  Instantiate(efectoVFXMoneda, posicion, Quaternion.identity);
               }
             score += 1;
+            if (Personaje.CompareTag("Player1"))
+            {
+                PuntajeManager.instance.setPuntajePlayer1(score, Personaje.gameObject.name.ToString());
+
+            }
+            if (Personaje.CompareTag("Player2"))
+            {
+                PuntajeManager.instance.setPuntajePlayer2(score, Personaje.gameObject.name.ToString());
+
+            }
+
+
             Destroy(other.gameObject); // desaparición de objetos
         }
         else if (other.CompareTag("Rayo"))
