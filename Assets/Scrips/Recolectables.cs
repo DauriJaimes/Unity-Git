@@ -12,9 +12,12 @@ public class Recolectables : MonoBehaviour
     public AudioClip sonidoObstaculos;
     private AudioSource audioSource;
     public GameObject efectoVFX;
+    public GameObject Personaje;
 
 
     private int score = 0; // puntuación por recoger monedas
+    private int vida = 3; // puntuación vidas
+    private float velocidad = 10f;
 
 
     void Start()
@@ -33,6 +36,23 @@ public class Recolectables : MonoBehaviour
                  Instantiate(efectoVFXMoneda, posicion, Quaternion.identity);
               }
             score += 1;
+            velocidad += 0.5f;
+            if (vida != 0)
+            {
+                if (Personaje.CompareTag("Player1"))
+                {
+                    PuntajeManager.instance.setPuntajePlayer1(score, Personaje.gameObject.name.ToString());
+
+                }
+                if (Personaje.CompareTag("Player2"))
+                {
+                    PuntajeManager.instance.setPuntajePlayer2(score, Personaje.gameObject.name.ToString());
+
+                }
+            }
+           
+
+
             Destroy(other.gameObject); // desaparición de objetos
         }
         else if (other.CompareTag("Rayo"))
@@ -43,6 +63,23 @@ public class Recolectables : MonoBehaviour
                 Vector3 posicion = transform.position + new Vector3(0, 5f, 0);
                 Instantiate(efectoVFX, posicion, Quaternion.identity);
             }
+
+            velocidad += 2;
+            if (velocidad <= 0)
+            {
+                velocidad = 1;
+            }
+            if (Personaje.CompareTag("Player1"))
+            {
+                PuntajeManager.instance.setvelocidadPlayer1(velocidad, Personaje.gameObject.name.ToString());
+
+            }
+            if (Personaje.CompareTag("Player2"))
+            {
+                PuntajeManager.instance.setvelocidadPlayer2(velocidad, Personaje.gameObject.name.ToString());
+
+            }
+
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("Posion"))
@@ -53,6 +90,19 @@ public class Recolectables : MonoBehaviour
                 Vector3 posicion = transform.position + new Vector3(0, 5f, 0);
                 Instantiate(efectoVFX, posicion, Quaternion.identity);
             }
+
+            vida += 1;
+            if (Personaje.CompareTag("Player1"))
+            {
+                PuntajeManager.instance.setvidaPlayer1(vida, Personaje.gameObject.name.ToString());
+
+            }
+            if (Personaje.CompareTag("Player2"))
+            {
+                PuntajeManager.instance.setvidaPlayer2(vida, Personaje.gameObject.name.ToString());
+
+            }
+
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("Pulpo"))
@@ -63,6 +113,23 @@ public class Recolectables : MonoBehaviour
                 Vector3 posicion = transform.position + new Vector3(0, 5f, 0);
                 Instantiate(efectoVFX, posicion, Quaternion.identity);
             }
+
+            vida -= 1;
+            if (vida <= 0)
+            {
+                vida = 0;
+            }
+            if (Personaje.CompareTag("Player1"))
+            {
+                PuntajeManager.instance.setvidaPlayer1(vida, Personaje.gameObject.name.ToString());
+
+            }
+            if (Personaje.CompareTag("Player2"))
+            {
+                PuntajeManager.instance.setvidaPlayer2(vida, Personaje.gameObject.name.ToString());
+
+            }
+
             Destroy(other.gameObject);
         }
         else if (other.CompareTag("Ancla"))
@@ -73,9 +140,24 @@ public class Recolectables : MonoBehaviour
                 Vector3 posicion = transform.position + new Vector3(0, 5f, 0);
                 Instantiate(efectoVFX, posicion, Quaternion.identity);
             }
+
+            velocidad -= 2;
+            if (velocidad <= 1) { 
+                velocidad = 1.5f;
+            }
+            if (Personaje.CompareTag("Player1"))
+            {
+                PuntajeManager.instance.setvelocidadPlayer1(velocidad, Personaje.gameObject.name.ToString());
+
+            }
+            if (Personaje.CompareTag("Player2"))
+            {
+                PuntajeManager.instance.setvelocidadPlayer2(velocidad, Personaje.gameObject.name.ToString());
+
+            }
+
             Destroy(other.gameObject);
         }
-
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -83,6 +165,7 @@ public class Recolectables : MonoBehaviour
         {
 
             audioSource.PlayOneShot(sonidoObstaculos);
+         
         }
     }
 }

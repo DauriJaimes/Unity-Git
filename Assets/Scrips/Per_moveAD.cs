@@ -26,7 +26,7 @@ public class Per_moveAD : MonoBehaviour
             move = 1;
         }
 
-        transform.position += Vector3.right * move * speed * Time.deltaTime;
+        transform.position += Vector3.right * move * PuntajeManager.instance.getvelocidadPlayer1() * Time.deltaTime;
 
 
         // Actualizar animación

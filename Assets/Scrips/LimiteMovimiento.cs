@@ -11,6 +11,8 @@ public class LimiteMovimiento : MonoBehaviour
     public float minZ = 278f;
     public float maxZ = 278f;
 
+    public GameObject personaje;
+
     private Rigidbody rb;
 
     void Start()
@@ -20,6 +22,19 @@ public class LimiteMovimiento : MonoBehaviour
 
     void Update()
     {
+        float playervelocidad = 5f;
+        if (personaje.CompareTag("Player1"))
+        {
+            playervelocidad = PuntajeManager.instance.getvelocidadPlayer1();
+         }
+
+        if (personaje.CompareTag("Player2"))
+        {
+            playervelocidad = PuntajeManager.instance.getvelocidadPlayer2();
+        }
+
+        velocidad = playervelocidad;
+
         float moverX = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;
         float moverZ = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;
 
