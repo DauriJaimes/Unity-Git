@@ -26,11 +26,13 @@ public class LimiteMovimiento : MonoBehaviour
         if (personaje.CompareTag("Player1"))
         {
             playervelocidad = PuntajeManager.instance.getvelocidadPlayer1();
-         }
+            Debug.Log(playervelocidad + "Soy el 1");
+        }
 
         if (personaje.CompareTag("Player2"))
         {
             playervelocidad = PuntajeManager.instance.getvelocidadPlayer2();
+            Debug.Log(playervelocidad + "Soy el 2");
         }
 
         velocidad = playervelocidad;

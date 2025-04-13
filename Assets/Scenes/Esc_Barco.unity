@@ -15485,13 +15485,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0e8ec4be6a4d554881a5c8bb6d0c0cf, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 996681725}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0e8ec4be6a4d554881a5c8bb6d0c0cf, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 996681727}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0e8ec4be6a4d554881a5c8bb6d0c0cf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 996681726}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0e8ec4be6a4d554881a5c8bb6d0c0cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 996681725}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0e8ec4be6a4d554881a5c8bb6d0c0cf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 996681732}
@@ -15590,7 +15590,13 @@ MonoBehaviour:
   sonidoAncla: {fileID: 8300000, guid: b0b1169aee2b15f4fb9dc7478d0a0717, type: 3}
   sonidoObstaculos: {fileID: 8300000, guid: 9c40bcd7b74086745a78e3c822204092, type: 3}
   efectoVFX: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
+  VFX_Rayo: {fileID: 1141330259687333427, guid: 6718dc24203da53468af9ada8fef7d6d, type: 3}
+  VFX_Pocion: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5, type: 3}
+  VFX_RayoActivo: {fileID: 8656522925564163052, guid: e509867be4f82f246a95eca1ee5a2d61, type: 3}
   Personaje: {fileID: 996681722}
+  VFX_Ancla: {fileID: 2353600328335836179, guid: ceec7516237b4104b94300043ca39784, type: 3}
+  VFX_AnclaActiva: {fileID: 4772634663576830964, guid: e1385af346f4e624eb313ec1ea4fcd7e, type: 3}
+  VFX_PerderVida: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
 --- !u!82 &996681731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15604,7 +15610,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.77
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24303,7 +24309,13 @@ MonoBehaviour:
   sonidoAncla: {fileID: 8300000, guid: b0b1169aee2b15f4fb9dc7478d0a0717, type: 3}
   sonidoObstaculos: {fileID: 8300000, guid: 9c40bcd7b74086745a78e3c822204092, type: 3}
   efectoVFX: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
+  VFX_Rayo: {fileID: 1141330259687333427, guid: 6718dc24203da53468af9ada8fef7d6d, type: 3}
+  VFX_Pocion: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5, type: 3}
+  VFX_RayoActivo: {fileID: 8656522925564163052, guid: e509867be4f82f246a95eca1ee5a2d61, type: 3}
   Personaje: {fileID: 1466165814}
+  VFX_Ancla: {fileID: 2353600328335836179, guid: ceec7516237b4104b94300043ca39784, type: 3}
+  VFX_AnclaActiva: {fileID: 4772634663576830964, guid: e1385af346f4e624eb313ec1ea4fcd7e, type: 3}
+  VFX_PerderVida: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
 --- !u!82 &1466165823
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24413,7 +24425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc05f78ddb5f87d42ac4771759cf505d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 1
+  velocidad: 5
   minX: 434
   maxX: 489
   minZ: 278
